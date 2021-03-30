@@ -1,0 +1,401 @@
+<!-- HTML -->
+
+ <!--      
+    Anatomia das tags
+    - Abertura de tag
+    - Fechamento de tag
+    - Conteúdo 
+    - Elementos
+  -->
+
+ <h1> Anatomia das tags </h1>
+
+ <input type="text">
+
+
+ <a href="" >Link na página</a>
+
+ <!-- 
+    Atributos 
+    - Informações extras
+    - configurações
+    - tipo atributos booleanos (disabled)
+
+    Atributos globais
+    - class
+    - contenteditable (editar o conteúdo)
+    - data-* (utilizado no js e css)
+    - hidden
+    - id 
+    - style
+    - tabindex
+    - title (tipo um hint da tag)    
+  -->
+
+ <h1>  Atributos globais </h1>
+
+ <div class="teste" contenteditable="true"> 
+         Conteúdo editável
+ </div>
+
+ <div class="teste"> 
+    Conteúdo simples
+ </div>
+
+ <div class="teste" data-qualquer-nome-aqui=""> 
+    Conteúdo Data
+ </div>
+
+ <div class="teste" hidden> 
+    Conteúdo Escondido
+ </div>
+
+ <div class="teste" style="color: red;"> 
+    Conteúdo com estilo
+ </div>
+
+ <div tabindex="2"> 
+    Conteúdo com tabindex 1
+ </div>
+
+ <div title="Title do meu conteudo"> 
+    Conteúdo com title
+ </div>
+
+ <!-- 
+    Aninhamento de tags
+    - Fluxo
+    - Hieraruia
+    - Poscionamento dos elementos
+  -->
+ <h1>  Aninhamento de tags </h1>
+
+ <p>Escrevendo um <em>parágrafo</em> </p>
+
+ <h1>  Vamos praticar? </h1>
+
+ <p>
+    Lorem Ipsum is simply dummy text of the <strong>printing and typesetting industry</strong>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+    into electronic typesetting, remaining essentially unchanged. It was <em>popularised</em> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+    and more recently with desktop publishing <strong>software</strong> like Aldus PageMaker including versions of Lorem Ipsum.
+
+    <a href="google.com.br">Saiba mais aqui.</a>
+ </p>
+
+ <p>
+
+    It has survived not only five centuries, but also the leap 
+    into electronic <strong>typesetting</strong>, remaining essentially unchanged. It in the 1960s with the release of Letraset sheets containing Lorem
+    <a href="google.com.br">Continuar lendo...</a>
+ </p>
+
+ <h1>  Conteúdo de texto e caracteres reservados </h1>
+<p>
+
+    &nbsp; &nbsp; Aqui um texto com espaços especiais
+
+    &lt; teste &gt;
+
+    &amp; é o E comercial
+
+    &quot; algum texto aqui em aspas duplas &quot;
+
+</p>
+
+<!-- 
+    Anatomia de um documento HTML
+    - head: configurações especiais para o HTML, relativas ao documento
+    - meta: tipos de meta datos para a nossa pagina (charse="UTF-8")
+    - meta viewport: configuração que indica que a página será vista tanto em smartphones como em computadores
+    - body: contéudo do documento
+
+    Cabeçalho
+    - favicon: Favorite Icon
+    - <link>: para ícones personalizados
+         - rel: define o relacionamento
+         - size: define o para o tamanho em específico qual "icone" utilizar
+    - geralmente esses links para diversos dispositivos, é gerado pelo próprio framework
+    - SEO: Motores de busca = google
+    - meta author: propriedade sobre a página (bom para SEO)
+    - meta description: descrição que mostra abaixo do título quando lista no google(bom para SEO)
+    - meta robots: (padrão para website é index, follow)
+         - nofollow: nao seguir links dentro da página
+         - noindex: nao indexar a página em questão
+
+    Meta dados personalizados por empresas
+    - open graph: facebook
+    - tem para twitter tbm
+    - Ao compartilhar a página irá mostrar a imagem e descrição que eu definir
+       - <meta property="og:image"....
+
+ -->
+<h1>  Anatomia de um documento HTML e CABEÇALHO </h1>
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <meta name="author" content="Luiz Felipe">
+        <meta name="description" content="Um website para  tal tal...">
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="icon" href="https://rocketseat.com.br/favicon.ico">
+
+        <title>Teste title</title>
+    </head>
+
+    <body>
+        <p>
+            Conteúdo do meu documento
+        </p>
+    </body>
+</html>
+<!-- 
+    Semântica
+    - Quanto mais semântico seu site, mais provável que irá aparecer nas pesquisas do google (mais rankeado)
+    - <h1> é o título principal da página, de preferencia um por página
+    - NÃO ter mais de 3 tipos de H por página (h1, h2, h3)
+ -->
+<h1>  Elementos semânticos </h1>
+
+<h2>Segundo nível de título</h2>
+<h3>Terceiro nível do título</h3>
+<p>
+    Texto da página It has survived not only five centuries, but also the leap 
+</p>
+
+<!-- 
+    Listas 
+    - Sempre envolver em uma lista ordenada ou nao ordenada (<ol>)
+    - <ol>: para colocar uma lista numerada
+    - <ul>: para colocar os pontos em frente ao item.    
+    - li*4: Para ele criar 4 tags li
+ -->
+<h1>Listas</h1>
+
+<h2>Ingredientes:</h2>
+
+<ul>
+    <li>3 folhas de couve;</li>
+    <li>1 laranja;</li>
+    <li>2 pedaço de gengibre;</li>
+    <li>300 ml de água;</li>
+</ul>
+
+<!-- 
+    Citações 
+    - blockquote: Citações de  algum lugar
+    - cite
+    - q: citações curtas que não precisa de parágrafo ou quebra de linhas
+-->
+ <h1>Listas</h1>
+
+  <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+    <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+
+    Tag utilizada para isso <code>&lt;blockquote&gt;</code>
+  </blockquote>
+
+  <p>
+      De acordo com <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+      <cite>página MDN blockquote</cite></a>
+  </p>
+
+  <p>
+        O elemento quote - <code>&lt;q&gt;</code> - é <q cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+        para citações curtas</q> --- <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+        <cite>MDN q page</cite></a>.
+  </p>
+
+<!-- 
+    Abreviações 
+    - blockquote: Citações de  algum lugar
+    - cite
+    - q: citações curtas que não precisa de parágrafo ou quebra de linhas
+-->
+    <h1>Abreviações</h1>
+    <p>
+        Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nosos documentos na web.
+    </p>
+
+    <h1>Detalhes de contato</h1>
+    <p>
+        <address>
+            <p>Luiz Felipe</p> <br>
+            <strong>Porto Alegre, RS</strong>
+            </p>
+        </address>
+    </p>
+
+    <h1>Listas de descrição</h1>
+
+    <h2>Glossário</h2>
+    <dl>
+        <dt>Hypertext</dt>
+        <dd>É um hiper texto com possibilidades...</dd>
+
+        <dt>Markup</dt>
+        <dd>Marcação do text...</dd>
+        
+        <dt>Language</dt>
+        <dd>Lingaugem com semântica...</dd>           
+    </dl>
+
+
+<!-- 
+    Elementos genéricos
+    - div: Agrupar conteúdo (em bloco)
+    - span: agrupar texto (em linha)
+
+-->
+    <h1>Elementos genéricos</h1>
+    
+    <div>
+        Um texto qualquer
+        <span>Camiseta</span>
+        <span>R$ 10,99</span>
+    </div>
+
+    <span>Outro</span> <span>texto</span>
+
+<!-- 
+    Tag ancora (a)
+    - download: atributo utilizado para fazer download da página informada no href
+    - target: 
+       - "_self"(padrão): ele abre a página emcima da que estou
+       - "_blank": ele abre a página em outra aba
+
+-->
+<h1>Conhecendo tag âncora</h1>
+
+<p>Econtre-me</p>
+    
+<ul>
+    <li><a href="https://google.com.br">website mesma página</a></li>
+    <li><a href="https://google.com.br" target="_blank">website outra página</a></li>
+    <li><a href="mailto:campos.luiz97@gmail.com.br">Email</a></li>
+    <li><a href="tel:+555199254545">Telefone</a></li>
+</ul>
+
+<p>Saiba mais (fragmento)</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#history">História</a></li>
+</ul>
+
+
+<h2 id="about">Sobre mim</h2>
+<p>
+    Texto grande Texto grande Texto grande Texto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grande
+    Texto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grande
+</p>
+
+<h2 id="history">História</h2>
+<p>
+    Texto grande Texto grande Texto grande Texto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grande
+    Texto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grandeTexto grande
+</p>
+
+<h1>Conteúdo hyperlinks</h1>
+
+<a href="https://google.com.br" title="Ir para o google">
+    <h1>Google</h1>
+    <p>Click do botão</p>
+
+    <!-- <img src="https://source.unsplash.com/random" alt="" width="200px" height="200px"> -->
+
+</a>
+
+<!-- 
+    Elemento table
+     - tr: table row (linha)
+     - th: table header (cabeçalho, head)
+     - td: contéudo de cada coluna (precisa te um TH) 
+     - thead: Cabeçalho da table
+     - tfoot: rodapé da table
+     - caption: "título da tabel"
+-->
+
+<h1>Tabelas</h1>
+
+<table>
+    <caption>Pessoas por idade</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tr>
+        <td>Luiz</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Carlos</td>
+        <td>52</td>
+    </tr>
+    <tfoot>        
+        <tr>
+            <td>Tota: </td>
+            <td>75 anos</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- 
+    Tabelas complexas
+
+    - rowspan: Para ocupar duas linhas
+    - colspan: Para ocupar duas colunas
+    - colgroup: Tag para agrupar colunas (melhor para aplicar estilo)
+    - scope: para referenciar o colgroup (ajuda a entender melhor para o CEO)
+
+-->
+
+<h1>Tabelas complexas</h1>
+
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: brown;">
+        <col span="2" style="background-color: cadetblue;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Afonso Pena</th>
+            <th colspan="2" scope="colgroup">Antonio Pereira</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+
+
